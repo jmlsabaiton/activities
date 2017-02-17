@@ -14,10 +14,12 @@ function calc()
 var tax,total;
 var price=document.form.txtP.value;
 tax=0.085;
-taxtotal=price * tax
-document.form.txtT.value=taxtotal;
+taxtotal=+(price * tax);
+tt="$"+taxtotal;
+document.form.txtT.value=tt;
 var cost=parseFloat(price) + parseFloat(taxtotal);
-document.form.txtC.value=cost;
+cc="$"+cost;
+document.form.txtC.value=cc;
 }
 </script>
 
